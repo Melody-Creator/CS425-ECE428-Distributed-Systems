@@ -1,0 +1,8 @@
+7
+node1 localhost 8881
+node2 localhost 8882
+node3 localhost 8883
+node4 localhost 8884
+node6 localhost 8886
+node7 localhost 8887
+node8 localhost 8888
