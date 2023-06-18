@@ -1,4 +1,4 @@
-# Total Order Distributed Transactions
+# Total Ordering Distributed Transactions
 
 ## Design Description
 In this mp, we use ISIS algorithm to ensure multicast in total order. We use R-multicast to achieve reliable message delivery.
