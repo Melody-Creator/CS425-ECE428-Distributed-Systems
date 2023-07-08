@@ -216,7 +216,7 @@ public:
                               << " false" << std::endl;
                 } else if ((last_log_term < log.back().first) || (last_log_term == log.back().first &&
                             last_log_index < log_size - 1)) {
-                    std::cout << "SEND " << candidate_id << " RequestVotesRes ponse " << current_term 
+                    std::cout << "SEND " << candidate_id << " RequestVotesResponse " << current_term 
                               << " false" << std::endl;
                 } else {
                     // here only reset timeout by granting vote to candidate (potential leader)
