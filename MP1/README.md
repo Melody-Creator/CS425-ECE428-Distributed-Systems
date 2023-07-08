@@ -1,4 +1,4 @@
-# Total Order Distributed Transactions
+# Total Ordering Distributed Transactions
 
 ## Design Description
 In this mp, we use ISIS algorithm to ensure multicast in total order. We use R-multicast to achieve reliable message delivery.
@@ -24,9 +24,7 @@ For Scenario 1 and 3, run the following commands in three separate terminals:
 
 ```
 python -u gentx.py 0.5 | go run -race mp1_node.go node1 8881 three_nodes/node1_config.txt
-
 python -u gentx.py 0.5 | go run -race mp1_node.go node2 8882 three_nodes/node2_config.txt
-
 python -u gentx.py 0.5 | go run -race mp1_node.go node3 8883 three_nodes/node3_config.txt
 ```
 
@@ -34,11 +32,8 @@ For Scenario 2 and 4, run the following commands in eight separate terminals:
 
 ```
 python -u gentx.py 5 | go run -race mp1_node.go node1 8881 eight_nodes/node1_config.txt
-
 python -u gentx.py 5 | go run -race mp1_node.go node2 8882 eight_nodes/node2_config.txt
-
 ...
-
 python -u gentx.py 5 | go run -race mp1_node.go node8 8888 eight_nodes/node8_config.txt
 ```
 
@@ -54,11 +49,8 @@ After building and running the code above, some intermediate data will be genera
 
 ```
 python plot.py three_nodes
-
 python plot.py eight_nodes
-
 python plot.py three_nodes fail
-
 python plot.py eight_nodes fail
 ```
 
